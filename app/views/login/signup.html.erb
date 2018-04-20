@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+</head>
+<body>
+	<%= form_tag :action => 'signup' do %>
+	<div class="field">
+		<%= f.label :nombres %>
+		<%= f.text_field :nombres %>
+	</div>
+	
+	
+	<p>Apellidos: <%= text_field_tag 'apellidos', @Apellido%></p>
+	<p>Cedula: <%= text_field_tag 'cedula', @Cedula%></p>
+	<p>Correo (opcional): <%= text_field_tag 'correo', @Correo%></p>
+	<%= submit_tag 'Registrarse' %>
+	<% end %>
+</body>
+</html>
